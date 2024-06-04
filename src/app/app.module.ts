@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { MapComponent } from './map/map.component'; // No incluyas la extensión .ts en la ruta de importación
+import { AppComponent } from './app/app.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent, // Declare the component
+    MapComponent
   ],
   imports: [
-    BrowserModule,
-  ],
+    BrowserModule
+  ],        
   providers: [],
   bootstrap: [AppComponent]
 })

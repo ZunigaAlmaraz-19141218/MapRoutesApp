@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as mapboxgl from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 
 @Component({
   selector: 'app-map',
@@ -7,7 +7,7 @@ import * as mapboxgl from 'mapbox-gl';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  map: mapboxgl.Map;
+  map!: mapboxgl.Map;
 
   ngOnInit() {
     (mapboxgl as any).accessToken = 'pk.eyJ1IjoiMTkxNDEyMTgiLCJhIjoiY2x3aWxiajFrMGQ4bDJqbnIyc3U2dXh2dSJ9.F7-tPZXbjdg3GbCeDULKWg';    
